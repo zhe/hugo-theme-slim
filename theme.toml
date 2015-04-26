@@ -1,0 +1,6 @@
+author = "Zhe Zhang"
+description = "A slim minimal theme for Hugo."
+license = "MIT"
+name = "Slim"
+source_repo = ""
+tags = ["minimal", "clean", "neat"]

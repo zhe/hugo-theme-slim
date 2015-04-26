@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="container">
+    {{ partial "header.html" . }}
+    <div class="content">
+      <div class="posts">
+
+        {{ range .Data.Pages }}
+        <div class="post">
+          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
+  <script src="{{ .Site.BaseUrl }}/js/slim.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58516870-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
