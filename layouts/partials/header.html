@@ -1,14 +1,17 @@
 <div class="header">
-  <h1 class="site-title"><a href="{{ .Site.BaseUrl }}">Zhe Zhang</a></h1>
-  <p class="site-tagline">A personal site made in Shanghai.</p>
+  <h1 class="site-title"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></h1>
+  <p class="site-tagline">{{ .Site.Params.Subtitle  }}</p>
   <div class="nav">
     <a class="nav-btn" href="#">
       <span class="ci ci-burger"></span>
     </a>
     <ul class="nav-list">
-      <li><a href="https://github.com/zhe">Github</a></li>
-      <li><a href="https://twitter.com/neomana">Twitter</a></li>
-      <li><a href="http://linkedin.com/in/zhangzhe">LinkedIn</a></li>
+      {{ with .Site.Params.GithubID }}
+      <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }}
+      {{ with .Site.Params.TwitterID }}
+      <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }}
+      {{ with .Site.Params.LinkedInID }}
+      <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}
     </ul>
   </div>
 </div>
