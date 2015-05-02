@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="{{ .Site.LanguageCode }}">
 
 <head>
   {{ partial "head.html" . }}
@@ -10,17 +10,18 @@
     {{ partial "header.html" . }}
     <div class="content">
       <div class="posts">
-        {{ range .Data.Pages }}
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range $paginator.Pages }}
         <div class="post">
           <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
         </div>
         {{ end }}
       </div>
+      {{ partial "pagination.html" . }}
     </div>
     {{ partial "footer.html" . }}
   </div>
-  <script src="{{ .Site.BaseUrl }}/js/slim.js"></script>
+  <script src="{{ .Site.BaseUrl }}js/slim.js"></script>
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
 
 </body>

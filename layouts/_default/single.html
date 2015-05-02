@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
   {{ partial "head.html" . }}
@@ -9,13 +9,10 @@
   <div class="container">
     {{ partial "header.html" . }}
     <div class="content">
-      <div class="posts">
-        <div class="post">
-          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-          <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-          <div class="post-content">
-            {{ .Content }}
-          </div>
+      <div class="post">
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div class="post-content">
+          {{ .Content }}
         </div>
       </div>
     </div>

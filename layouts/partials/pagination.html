@@ -1,0 +1,5 @@
+<div class="pagination">
+  {{ if .Paginator.HasPrev }}
+  <a class="btn previous" href="{{ .Paginator.Prev.Url }}">Newer</a> {{ end }} {{ if .Paginator.HasNext }}
+  <a class="btn next" href="{{ .Paginator.Next.Url }}">Older</a> {{ end }}
+</div>

@@ -1,16 +1,16 @@
 <div class="header">
   <h1 class="site-title"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></h1>
-  <p class="site-tagline">{{ .Site.Params.Subtitle  }}</p>
+  <p class="site-tagline">{{ .Site.Params.Subtitle }}</p>
   <div class="nav">
     <a class="nav-btn" href="#">
       <span class="ci ci-burger"></span>
     </a>
     <ul class="nav-list">
-      {{ with .Site.Params.GithubID }}
-      <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }}
-      {{ with .Site.Params.TwitterID }}
-      <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }}
-      {{ with .Site.Params.LinkedInID }}
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .Url }}">{{ .Name }}</a></li>
+      {{end}} {{ with .Site.Params.GithubID }}
+      <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
+      <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
       <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}
     </ul>
   </div>
