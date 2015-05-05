@@ -26,6 +26,10 @@
     {{ partial "footer.html" . }}
   </div>
   <script src="{{ .Site.BaseUrl }}/js/slim.js"></script>
+  <script src="{{ .Site.BaseUrl }}/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
 </body>
 
