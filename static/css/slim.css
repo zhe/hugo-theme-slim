@@ -337,8 +337,9 @@ button,
 .post-date {
   color: #ccc;
   font-size: 14px;
-  position: absolute;
-  top: 45px; }
+  margin-top: -25px;
+  display:block;
+  position: relative; }
 
 .post-content {
   margin: 2rem 0; }
@@ -347,11 +348,13 @@ button,
 
 .post-tags {
   color: #ccc;
+  display: block;
   font-size: 14px;
-  position: absolute;
-  right: 25px;
-  top: 45px; 
+  position: relative;
+  margin-top: -25px;
+  margin-left: 125px;
   text-align: right;
+  max-width: 525px;
 }
 
 .post-tags a {
