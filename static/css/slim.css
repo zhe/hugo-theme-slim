@@ -212,6 +212,10 @@ button,
   -webkit-transition: all 0.2s;
           transition: all 0.2s; }
 
+.nav-list .spacer {
+	text-align: center;
+}
+
 .ci {
   display: inline-block;
   font-size: inherit;
@@ -338,3 +342,19 @@ button,
 
 .post-content {
   margin: 2rem 0; }
+
+/* styling for tags on homepage */
+
+.post-tags {
+  color: #ccc;
+  font-size: 14px;
+  position: absolute;
+  right: 25px;
+  top: 45px; 
+  text-align: right;
+}
+
+.post-tags a {
+	color: #ccc;
+}
+
