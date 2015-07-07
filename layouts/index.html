@@ -21,7 +21,7 @@
     </div>
     {{ partial "footer.html" . }}
   </div>
-  <script src="{{ .Site.BaseUrl }}js/slim.js"></script>
+  <script src="{{ .Site.BaseURL }}js/slim.js"></script>
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
 
 </body>

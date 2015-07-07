@@ -5,7 +5,7 @@ description = "A slim minimal theme for Hugo."
 homepage = "https://github.com/zhe/hugo-theme-slim"
 tags = ["minimal", "clean", "neat", "black white", "blog"]
 features = ["blog"]
-min_version = 0.13
+min_version = 0.14
 
 [author]
     name = "Zhe Zhang"
