@@ -1,5 +1,5 @@
 <div class="header">
-  <h1 class="site-title"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></h1>
+  <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
   <p class="site-tagline">{{ .Site.Params.Subtitle }}</p>
   <div class="nav">
     <a class="nav-btn" href="#">
@@ -7,8 +7,10 @@
     </a>
     <ul class="nav-list">
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .Url }}">{{ .Name }}</a></li>
-      {{end}} {{ with .Site.Params.GithubID }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{end}} 
+	  <li class="spacer">&ac;</li>
+{{ with .Site.Params.GithubID }}
       <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
       <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
       <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}

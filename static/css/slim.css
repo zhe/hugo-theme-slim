@@ -14,7 +14,7 @@ a {
 
 img {
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: 1rem 0 0 1rem;
   border: 0;
   border-radius: 5px; }
 
@@ -40,8 +40,8 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9; }
 
 body {
-  color: #333;
-  font-family: Merriweather, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Serif;
+  color: #555;
+  font-family: Verdana, 'Merriweather', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Serif;
   font-size: 100%;
   line-height: 1.85;
   letter-spacing: 0.01rem; }
@@ -212,6 +212,10 @@ button,
   -webkit-transition: all 0.2s;
           transition: all 0.2s; }
 
+.nav-list .spacer {
+	text-align: center;
+}
+
 .ci {
   display: inline-block;
   font-size: inherit;
@@ -333,8 +337,27 @@ button,
 .post-date {
   color: #ccc;
   font-size: 14px;
-  position: absolute;
-  top: 45px; }
+  margin-top: -25px;
+  display:block;
+  position: relative; }
 
 .post-content {
   margin: 2rem 0; }
+
+/* styling for tags on homepage */
+
+.post-tags {
+  color: #ccc;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  margin-top: -25px;
+  margin-left: 125px;
+  text-align: right;
+  max-width: 525px;
+}
+
+.post-tags a {
+	color: #ccc;
+}
+
