@@ -1,0 +1,26 @@
+{
+  "name": "hugo-theme-slim",
+  "description": "Slim is a minimal, clean and beautiful theme for [Hugo](http://gohugo.io/).",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://zhe@github.com/zhe/hugo-theme-slim.git"
+  },
+  "author": "Zhe Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhe/hugo-theme-slim/issues"
+  },
+  "homepage": "https://github.com/zhe/hugo-theme-slim#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
