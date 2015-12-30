@@ -89,7 +89,7 @@ em {
   text-emphasis-position: under; }
 
 code {
-  font-family: Monaco, Courier, monospace;
+  font-family: 'Source Code Pro', Monaco, Courier, monospace;
   font-size: 0.85rem;
   color: #555;
   background-color: #f5f5f5;
@@ -111,7 +111,7 @@ pre {
   background-color: #f9f9f9; }
 
 pre code {
-  font-family: Menlo, Monaco, Courier, monospace;
+  font-family: 'Source Code Pro', Menlo, Monaco, Courier, monospace;
   font-size: 0.7rem;
   padding: 0;
   color: inherit;
