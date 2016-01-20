@@ -41,8 +41,9 @@ tbody tr:nth-child(odd) th {
 
 body {
   color: #555;
-  font-family: 'Merriweather', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, Serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, Serif;
   font-size: 100%;
+  font-weight: 400;
   line-height: 1.85;
   letter-spacing: 0.01rem; }
 
@@ -52,10 +53,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Source Sans Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 h1 {
   font-size: 1.8rem; }
@@ -176,7 +177,8 @@ button,
   margin: 3rem auto; }
 
 .site-title {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: 700; }
   .site-title a {
     color: #333; }
 
