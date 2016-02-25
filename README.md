@@ -29,6 +29,7 @@ You could add `params` into your site's `config.toml` file:
   Summary = true  # takes true or false
   Content = false  # takes true or false
   # if both are set to true, summary is shown.
+  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
 ```
 
 if you use `config.yaml`, it could look like:
@@ -43,6 +44,7 @@ params:
   Summary: true # takes true or false
   Content: false # takes true or false
   # if both are set to true, summary is shown
+  # FooterMsg: "Custom footer message. Powered by Hugo."
 ```
 
 ### Enable Disqus to your post
