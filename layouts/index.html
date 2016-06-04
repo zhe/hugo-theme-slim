@@ -17,7 +17,7 @@
 		  {{ if .Params.tags }}
 			<span class="post-tags">
 		  	{{ range .Params.tags }}
-			          #<a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+			          #<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
 		  	{{ end }}
 		    </span>
 		  {{ end }}
@@ -38,7 +38,7 @@
     </div>
     {{ partial "footer.html" . }}
   </div>
-  <script src="{{ .Site.BaseURL }}/js/slim.js"></script>
+  <script src="{{ .Site.BaseURL }}js/slim.js"></script>
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
 
 </body>
