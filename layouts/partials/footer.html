@@ -1,3 +1,7 @@
 <div class="footer">
+  {{if isset .Site.Params "FooterMsg"}}
+  <p>{{.Site.Params.FooterMsg}}</p>
+  {{else}}
   <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  {{end}}
 </div>
