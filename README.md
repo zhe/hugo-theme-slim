@@ -4,7 +4,7 @@ Slim is a minimal, clean and beautiful theme for [Hugo](http://gohugo.io/).
 
 ![Slim screenshot](https://github.com/zhe/hugo-theme-slim/blob/master/images/screenshot.png)
 
-[Demo](http://zhezhang.co).
+[Demo](http://themes.gohugo.io/theme/slim).
 
 ## Installation
 
