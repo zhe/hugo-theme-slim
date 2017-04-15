@@ -1,0 +1,85 @@
+.post-header {
+  max-width: var(--contentWidth);
+  margin: 0 auto 1rem;
+}
+
+.post-content {
+  & p,
+  & ol,
+  & ul,
+  & blockquote {
+    max-width: var(--contentWidth);
+    margin: 0 auto 1.2rem;
+  }
+
+  & pre {
+    max-width: var(--contentWidth);
+    margin: 0 auto 1rem;
+  }
+
+  & :--heading {
+    max-width: var(--contentWidth);
+    margin: 0 auto .5rem;
+  }
+
+  & table,
+  & .gist {
+    position: relative;
+    width: 770px;
+    margin: 0 auto 1rem;
+  }
+  & .embed {
+    position: relative;
+    width: 770px;
+    height: 394px;
+    margin: 0 auto 1rem;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+}
+
+figure {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+figcaption {
+  color: var(--mainColor);
+  font-size: 1rem;
+}
+
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-title a {
+  color: #333333;
+  background: #fff;
+  z-index: 1;
+  padding-right: .5rem;
+  position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    color: color(var(--mainColor) tint(20%));
+  }
+}
+
+.post-meta,
+.post-meta a {
+  font-size: var(--fontSize);
+  color: color(var(--mainColor) tint(50%));
+}
+
+.post-tags {
+  display: block;
+  float: right;
+  margin-left: 125px;
+  text-align: right;
+  max-width: 425px;
+}

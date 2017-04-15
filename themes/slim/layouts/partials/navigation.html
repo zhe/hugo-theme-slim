@@ -1,0 +1,18 @@
+<header class="navigation">
+  <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  <div class="site-subtitle">{{ .Site.Params.Subtitle }}</div>
+  <div class="nav">
+    <ul class="nav-list">
+      {{- $currentPage := . -}}
+      {{ range .Site.Menus.main }}
+      <li class="nav-item {{ if $currentPage.IsMenuCurrent "main" . -}}active{{end}}">
+        {{- if $currentPage.IsMenuCurrent "main" . }}
+        <span class="nav-link">{{ .Name }}</span>
+        {{- else }}
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</header>

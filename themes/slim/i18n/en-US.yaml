@@ -1,0 +1,7 @@
+---
+- id: home
+  translation: "Home"
+- id: readingTime
+  translation: 
+    one: "1 min read"
+    other: "{{.Count}} mins read"

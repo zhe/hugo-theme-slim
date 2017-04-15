@@ -1,0 +1,12 @@
+name = "slim"
+license = "MIT"
+licenselink = "https://github.com/zhe/hugo-theme-slim/blob/master/LICENSE.md"
+description = ""
+homepage = "http://siteforthistheme.com/"
+tags = ["slim", "minimal", "clean", "blog"]
+features = []
+min_version = 0.19
+
+[author]
+  name = "Zhe Zhang"
+  homepage = "https://github.com/zhe"

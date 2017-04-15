@@ -1,0 +1,25 @@
+{
+  "name": "slimtheme",
+  "version": "0.0.0",
+  "description": "Slim theme demo site",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "amoicons": "^0.0.3",
+    "babel-loader": "^6.4.1",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "normalize.css": "^6.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.3.3",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {}
+}

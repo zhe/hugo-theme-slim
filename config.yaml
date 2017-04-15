@@ -1,0 +1,17 @@
+---
+title: "Slim – A (Hugo) Theme"
+baseURL: "/"
+theme: "slim"
+metaDataFormat: "yaml"
+defaultContentLanguage: "en"
+copyright: ""
+googleAnalytics: ""
+blackfriday:
+  angledQuotes: true
+  fractions: false
+  plainIDAnchors: true
+params:
+  Subtitle: "Carefully handcrafted, minimal and customizable theme"
+  GitHubID: "zhe/hugo-theme-slim"
+  TwitterID: "zhzhng"
+  LinkedInID: ""

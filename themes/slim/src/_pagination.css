@@ -1,0 +1,24 @@
+.pagination {
+  position: relative;
+  margin: 5em auto;
+  max-width: var(--contentWidth);
+
+}
+
+.pagination:before,
+.pagination:after {
+  content: '';
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination .previous {
+  float: left;
+}
+
+.pagination .next {
+  float: right;
+}

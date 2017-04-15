@@ -1,0 +1,57 @@
+.navigation {
+  max-width: var(--contentWidth);
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  & a,
+  & a:hover {
+    color: var(--mainColor);
+    text-decoration: none;
+  }
+}
+
+.nav {
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: "/";
+  }
+}
+
+.nav-item:last-child {
+  &:after {
+    content: "";
+  }
+}
+
+.nav-item.active .nav-link:after {
+  content: "^";
+  position: absolute;
+  left: 45%;
+  bottom: -80%;
+}
+
+.nav-link {
+  color: var(--mainColor);
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}

@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="content">
+  <article>
+    <!--Post header, including title, metadatas -->
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{- if eq .Type "post"}}
+      <div class="post-meta">
+        <span class="post-date">{{ .Date.Format "Jan 2, 2006 " }}</span> · <span class="post-readingtime">{{int .ReadingTime}} min{{ if gt .ReadingTime 1 }}s{{end}} read</span>
+      </div>
+      {{end}}
+    </header>
+    <!--Post content -->
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+    <!--Post pagination -->
+    {{- if eq .Type "posts"}}
+    <footer class="pagination">
+    {{- if .Prev }}<a class="btn previous" href="{{ .Prev.Permalink }}">{{.Prev.Title}}</a>{{- end }}
+    {{- if .Next }}<a class="btn next" href="{{ .Next.Permalink }}">{{.Next.Title}}</a>{{- end }}
+    </footer>
+    {{- end }}
+  </article>
+</section>
+
+{{ partial "footer.html" . }}

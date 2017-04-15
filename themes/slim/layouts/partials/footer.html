@@ -1,0 +1,26 @@
+<div class="footer">
+  {{ with .Site.Params.GithubID }}
+      <a href="https://github.com/{{.}}" class="link social-link">
+        <svg class="amoicon"><use xlink:href="#github"></use></svg>
+      </a>
+  {{ end }}
+  {{ with .Site.Params.TwitterID }}
+      <a href="https://twitter.com/{{.}}" class="link social-link">
+        <svg class="amoicon"><use xlink:href="#twitter"></use></svg>
+      </a>
+  {{ end }}
+  {{ with .Site.Params.LinkedInID }}
+      <a href="https://linkedin.com/{{.}}" class="link social-link">
+        <svg class="amoicon"><use xlink:href="#linkedin"></use></svg>
+      </a>
+  {{ end }}
+  {{ with .Site.Copyright -}}
+    <p>{{ . | safeHTML }} </p>
+    {{- else -}}
+    <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  {{- end }}
+</div>
+<script src="/bundle.js"></script>
+{{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics_async.html" . }}{{ end }}
+</body>
+</html>

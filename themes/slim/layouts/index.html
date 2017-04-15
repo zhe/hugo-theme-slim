@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="content">
+  {{- range first 10 .Data.Pages }}
+  {{- if eq .Type "post"}}
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
+      <div class="post-meta">
+        <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} - {{ .ReadingTime }} min read</span>
+        {{- if .Params.tags }}
+        <span class="post-tags">
+		  	{{- range .Params.tags }}#<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;{{- end }}
+		    </span>
+        {{- end }}
+        </div>
+    </header>
+    <section class="post-content">
+      <p>{{ .Description }}</p>
+    </section>
+  </article>
+  {{- end}}
+  {{- end}}
+</section>
+
+{{ partial "footer.html" . }}
