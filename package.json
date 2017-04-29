@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "amoicons": "^0.0.3",
+    "amoicons": "^0.0.6",
     "babel-loader": "^6.4.1",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",

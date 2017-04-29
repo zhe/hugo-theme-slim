@@ -39,9 +39,9 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
-amoicons@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/amoicons/-/amoicons-0.0.3.tgz#c0298be530d17ed8575692e40de1613e370f1e3a"
+amoicons@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/amoicons/-/amoicons-0.0.6.tgz#75d4be21c49d45d760f44309e31200fe0f5daa1d"
 
 ansi-regex@^2.0.0:
   version "2.1.1"

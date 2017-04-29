@@ -73,7 +73,7 @@ figcaption {
 .post-meta,
 .post-meta a {
   font-size: var(--fontSize);
-  color: color(var(--mainColor) tint(50%));
+  color: var(--greyColor);
 }
 
 .post-tags {

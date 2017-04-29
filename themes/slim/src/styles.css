@@ -9,8 +9,9 @@
 :root {
   --fontSize: 1rem;
   --mainColor: #333333;
+  --greyColor: #bcc1c1;
   --linkColor: #2980b9;
-  --highlightColor: hwb(190, 35%, 20%);
+  --highlightColor: #26c6da;
   --contentWidth: 640px;
 }
 
