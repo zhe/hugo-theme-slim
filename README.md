@@ -6,6 +6,8 @@ This repo contains the demo site content and the Slim theme. It is quite easy fo
 
 We need Hugo to serve the site and Webpack to develop the theme.
 
+![Slim screenshot](https://github.com/zhe/hugo-theme-slim/blob/v2/themes/slim/images/screenshot.png)
+
 ## How to
 
 1. Clone this repo and switch to `v2` branch
