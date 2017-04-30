@@ -501,7 +501,6 @@ header.navigation {
 }
 
 .post-content {
-
 }
 
 .post-content p,
@@ -531,19 +530,17 @@ header.navigation {
 }
 
 .post-content table,
-  .post-content .gist {
+  .post-content .gist,
+  .post-content .embed {
   position: relative;
   width: 770px;
   margin: 0 auto 16px;
   margin: 0 auto 1rem;
+  max-width: 100%;
 }
 
 .post-content .embed {
-  position: relative;
-  width: 770px;
   height: 394px;
-  margin: 0 auto 16px;
-  margin: 0 auto 1rem;
 }
 
 .post-content img {
@@ -596,6 +593,12 @@ figcaption {
   max-width: 425px;
 }
 
+.post-summary {
+  margin: -16px auto 0;
+  margin: -1rem auto 0;
+  max-width: 640px;
+}
+
 .pagination {
   position: relative;
   margin: 5em auto;
@@ -621,6 +624,59 @@ figcaption {
   float: right;
 }
 
+.footer {
+  color: #bcc1c1;
+  max-width: 640px;
+  margin: 144px auto 16px;
+  margin: 9rem auto 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+section.social {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footer a {
+  color: #333333;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  line-height: 1
+}
+
+.btn-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.amoicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+.amoicon-facebook {
+  fill: #3c5a99;
+}
+
+.amoicon-linkedin {
+  fill: #0065a1;
+}
+
+.amoicon-twitter {
+  fill: #55acee;
+}
+
+.amoicon-youtube {
+  fill: #cd201f;
+}
+
 body {
   margin: 0 1em;
   color: #333333;
@@ -629,22 +685,6 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.7;
-}
-
-.social-link {
-  display: inline-block;
-}
-
-.social-link:hover .amoicon {
-  fill: #333333;
-}
-
-.amoicon {
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  vertical-align: text-top;
-  fill: rgb(194, 194, 194);
 }
 
 table {
@@ -871,16 +911,4 @@ button:active,
 
 .ci-burger:after {
   bottom: -6px;
-}
-
-.footer {
-  color: rgb(194, 194, 194);
-  font-size: 14px;
-  text-align: center;
-  margin: 32px 0 16px;
-  margin: 2rem 0 1rem;
-}
-
-.footer a {
-  color: #333;
 }

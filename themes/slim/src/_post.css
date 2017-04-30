@@ -23,22 +23,21 @@
   }
 
   & table,
-  & .gist {
-    position: relative;
-    width: 770px;
-    margin: 0 auto 1rem;
-  }
+  & .gist,
   & .embed {
     position: relative;
     width: 770px;
-    height: 394px;
     margin: 0 auto 1rem;
+    max-width: 100%;
+  }
+
+  & .embed {
+    height: 394px;
   }
 
   & img {
     max-width: 100%;
   }
-
 }
 
 figure {
@@ -51,7 +50,6 @@ figcaption {
   color: var(--mainColor);
   font-size: 1rem;
 }
-
 
 .post-title {
   margin-bottom: 0;
@@ -82,4 +80,9 @@ figcaption {
   margin-left: 125px;
   text-align: right;
   max-width: 425px;
+}
+
+.post-summary {
+  margin: -1rem auto 0;
+  max-width: var(--contentWidth);
 }

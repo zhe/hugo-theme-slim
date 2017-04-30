@@ -2,6 +2,8 @@
 @import '_navigation.css';
 @import '_post.css';
 @import '_pagination.css';
+@import '_footer.css';
+@import '../../../node_modules/amoicons/build/amoicons.css';
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-media --small-viewport (max-width: 30em);
 
@@ -23,20 +25,6 @@ body {
   font-size: calc(var(--fontSize) * 1.1);
   font-weight: 400;
   line-height: 1.7;
-}
-.social-link {
-  display: inline-block;
-}
-
-.social-link:hover .amoicon {
-  fill: var(--mainColor);
-}
-.amoicon {
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  vertical-align: text-top;
-  fill: color(var(--mainColor) tint(70%));
 }
 
 table {
@@ -244,15 +232,4 @@ button:active,
 
 .ci-burger:after {
   bottom: -6px;
-}
-
-.footer {
-  color: color(var(--mainColor) tint(70%));
-  font-size: 14px;
-  text-align: center;
-  margin: 2rem 0 1rem;
-}
-
-.footer a {
-  color: #333;
 }
