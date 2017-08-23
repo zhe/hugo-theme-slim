@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400i');
 html {
   box-sizing: border-box; }
 
@@ -179,9 +180,17 @@ button,
 .site-title {
   font-size: 1.5rem;
   font-weight: 700; }
-  .site-title a {
+
+.site-title a {
     color: #333; }
 
+  .site-tagline {
+      font-size: 150%;
+      font-weight: 300;
+      font-family: 'Lato', italic; 
+}
+
+  
 .nav {
   position: absolute;
   top: 0;
