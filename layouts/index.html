@@ -10,7 +10,7 @@
     {{ partial "header.html" . }}
     <div class="content">
       <div class="posts">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range $paginator.Pages }}
+        {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }} {{ range $paginator.Pages }}
         <div class="post">
           <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>

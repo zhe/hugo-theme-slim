@@ -30,6 +30,7 @@ You could add `params` into your site's `config.toml` file:
   Content = false  # takes true or false
   # if both are set to true, summary is shown.
   # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+  mainSections = ["post"]
 ```
 
 if you use `config.yaml`, it could look like:
@@ -45,6 +46,7 @@ params:
   Content: false # takes true or false
   # if both are set to true, summary is shown
   # FooterMsg: "Custom footer message. Powered by Hugo."
+  mainSections: ["post"]
 ```
 
 ### Enable Disqus to your post
